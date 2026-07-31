@@ -8,6 +8,9 @@ alt: 'A picturesque valley showcasing majestic mountains and lush forests, creat
 credit: A photo I took.
 ---
 
+{% cloudinaryPicture '{"src":"assets/images/chris-weiher-unsplash","alt":"TODO: describe this image","width":4064,"height":3056,"breakpoints":"50, 252, 384, 563, 713, 793, 873, 997, 998, 1000","pictureClass":"responsive-picture","devices":"1200|40|original,992|60|16:9,768|70|4:3,0|100|1:1"}' %}
+
+
 Using the powerful [Eleventy Image plugin](https://www.11ty.dev/docs/plugins/image/), we have three ways to optimize images: <a href="#html-transform">HTML Transform</a>, <a href="#markdown-syntax">Markdown syntax</a>, and <a href="#nunjucks-shortcodes">Nunjucks shortcodes</a>.
 
 ## HTML Transform
