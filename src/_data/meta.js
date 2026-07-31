@@ -1,4 +1,8 @@
-export const url = process.env.URL || 'http://localhost:8080';
+const isProdBuild = process.env.ELEVENTY_ENV === 'production';
+export const url =
+  process.env.URL ||
+  (isProdBuild && (process.env.SITE_URL || process.env.PUBLIC_SITE_URL)) ||
+  'http://localhost:8080';
 // Extract domain from `url`
 export const domain = new URL(url).hostname;
 export const siteName = 'Eleventy Excellent';
